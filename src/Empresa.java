@@ -163,9 +163,10 @@ public class Empresa {
         Funcionario funcionario = ListaFunc.get(0);
         for (Funcionario func : ListaFunc) {
             float valorAtual = valorTotal(func, ano, mes);
-            if (valorAtual > maior)
+            if (valorAtual > maior){
                 maior = valorAtual;
             funcionario = func;
+            }
 
         }
         return funcionario;
@@ -184,9 +185,10 @@ public class Empresa {
 
         for (Funcionario func : ListaFunc) {
             float valorAtual = beneficio(func, ano, mes);
-            if (valorAtual > maior)
+            if (valorAtual > maior){
                 maior = valorAtual;
             nome = func.getNome();
+            }
 
         }
         return nome;
